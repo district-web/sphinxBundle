@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="dw_sphinx.lib.sphinx.class">DistrictWeb\SphinxBundle\Lib\Sphinx\SphinxClient</parameter>
+    </parameters>
+
+    <services>
+        <service id="dw_sphinx.sphinx" class="%dw_sphinx.lib.sphinx.class%">
+            <argument type="collection">
+                <argument key="host">%sphinx.host%</argument>
+                <argument key="port">%sphinx.port%</argument>
+            </argument>
+        </service>
+    </services>
+</container>
