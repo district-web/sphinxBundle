@@ -1,6 +1,6 @@
 <?php
 
-namespace Dw\Bundle\SphinxBundle\DependencyInjection;
+namespace SphinxBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
