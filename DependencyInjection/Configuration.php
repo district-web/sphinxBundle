@@ -1,6 +1,6 @@
 <?php
 
-namespace SphinxBundle\DependencyInjection;
+namespace DistrictWeb\SphinxBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
