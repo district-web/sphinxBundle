@@ -17,7 +17,7 @@
             </argument>
         </service>
 
-        <service id="twig.extension.inflector" class="%dw_sphinx.twig.extension.class%">
+        <service id="twig.extension.sphinx" class="%dw_sphinx.twig.extension.class%">
             <tag name="twig.extension" />
         </service>
     </services>
