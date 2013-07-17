@@ -24,5 +24,8 @@ class DwSphinxExtension extends Extension
 
         $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.xml');
+
+        $container->setParameter('dw_sphinx.host', $config['host']);
+        $container->setParameter('dw_sphinx.port', $config['port']);
     }
 }

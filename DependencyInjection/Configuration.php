@@ -20,9 +20,15 @@ class Configuration implements ConfigurationInterface
         $treeBuilder = new TreeBuilder();
         $rootNode = $treeBuilder->root('dw_sphinx');
 
-        // Here you should define the parameters that are allowed to
-        // configure your bundle. See the documentation linked above for
-        // more information on that topic.
+        $rootNode
+            ->children()
+                ->scalarNode('host')
+                    ->defaultValue('127.0.0.1')
+                ->end()
+                ->scalarNode('port')
+                    ->defaultValue('9312')
+                ->end()
+            ->end();
 
         return $treeBuilder;
     }

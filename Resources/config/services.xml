@@ -12,8 +12,8 @@
     <services>
         <service id="dw_sphinx.sphinx" class="%dw_sphinx.lib.sphinx.class%">
             <argument type="collection">
-                <argument key="host">%sphinx.host%</argument>
-                <argument key="port">%sphinx.port%</argument>
+                <argument key="host">%dw_sphinx.host%</argument>
+                <argument key="port">%dw_sphinx.port%</argument>
             </argument>
         </service>
 
